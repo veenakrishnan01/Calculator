@@ -10,7 +10,8 @@ function clearScreen() {
 function findResult() {
   try {
     var result = eval(screen.value);
-  } catch (error) {
     screen.value = result;
+  } catch (error) {
+    screen.value = "Error";
   }
 }
